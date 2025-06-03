@@ -14,43 +14,43 @@
         /* Custom styles to complement Tailwind */
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #FFF8E1; /* Main creamy background */
-            color: #333; /* Darker text for better readability */
+            background-color: #FFF8E1; 
+            color: #333; 
         }
         .hero-section {
-            background-image: url('mango_box_set.jpg'); /* Current hero image - good choice */
+            background-image: url('mango_box_set.jpg'); 
             background-size: cover;
             background-position: center;
             position: relative;
         }
         .hero-overlay {
-            background-color: rgba(0, 0, 0, 0.4); /* Slightly lighter overlay */
+            background-color: rgba(0, 0, 0, 0.4); 
         }
-        /* Reference site uses Poppins primarily */
-        .brand-font { /* Kept for logo if needed, but general text is Poppins */
+        .brand-font { 
             font-family: 'Poppins', sans-serif; 
             font-weight: 700;
         }
-        .brand-gold { color: #f7c531; } /* Brighter gold from reference */
-        .brand-green { color: #4CAF50; } /* Existing green is fine */
+        .brand-gold { color: #f7c531; } 
+        .brand-green-text { color: #4CAF50; } 
+        .bg-brand-green { background-color: #4CAF50; } 
         
-        .btn-primary { /* Main CTA button style inspired by reference */
-            background-color: #f7c531; /* Brighter gold */
-            color: #333; /* Darker text for contrast on gold */
+        .btn-primary { 
+            background-color: #f7c531; 
+            color: #333; 
             font-weight: 600;
             transition: background-color 0.3s ease, transform 0.2s ease;
-            border-radius: 0.5rem; /* 8px */
+            border-radius: 0.5rem; 
         }
         .btn-primary:hover {
             background-color: #e6b82a;
             transform: translateY(-2px);
         }
-        .btn-whatsapp { /* Keeping specific WhatsApp style */
+        .btn-whatsapp { 
             background-color: #25D366;
             color: white;
             font-weight: 600;
             transition: background-color 0.3s ease, transform 0.2s ease;
-            border-radius: 0.5rem; /* 8px */
+            border-radius: 0.5rem; 
         }
         .btn-whatsapp:hover {
             background-color: #1DAE52;
@@ -61,7 +61,7 @@
             color: white;
             font-weight: 600;
             transition: background-color 0.3s ease, transform 0.2s ease;
-            border-radius: 0.5rem; /* 8px */
+            border-radius: 0.5rem; 
         }
         .btn-google:hover {
             background-color: #C33D2E;
@@ -70,10 +70,10 @@
 
         .card {
             background-color: white;
-            border-radius: 0.75rem; /* 12px */
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Softer shadow */
+            border-radius: 0.75rem; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
             overflow: hidden; 
-            padding: 1.5rem; /* 24px */
+            padding: 1.5rem; 
         }
         .section-title {
              font-family: 'Poppins', sans-serif; 
@@ -82,12 +82,12 @@
         }
         .hero-title {
             font-family: 'Poppins', sans-serif; 
-            font-weight: 800; /* Extra bold for impact */
-            font-size: 2.75rem; /* 44px */
+            font-weight: 800; 
+            font-size: 2.75rem; 
         }
         @media (min-width: 768px) {
             .hero-title {
-                font-size: 3.5rem; /* 56px */
+                font-size: 3.5rem; 
             }
         }
         .whatsapp-icon {
@@ -97,11 +97,11 @@
             vertical-align: middle;
         }
         
-        .section-light-bg { /* For sections like About, Locations */
-            background-color: #FFFBF5; /* Very light beige from reference */
+        .section-light-bg { 
+            background-color: #FFFBF5; 
         }
         .area-list {
-            list-style: none; /* Remove disc */
+            list-style: none; 
             padding-left: 0;
             text-align: left;
             margin-left: auto;
@@ -109,19 +109,19 @@
             max-width: 220px; 
         }
         .area-list li {
-            padding: 0.3rem 0; /* Slightly more padding */
+            padding: 0.3rem 0; 
             color: #555;
         }
-        .area-list li::before { /* Custom bullet for a cleaner look */
+        .area-list li::before { 
             content: "🥭";
             margin-right: 0.5rem;
             font-size: 0.8em;
         }
         .toggle-areas-btn {
-            background-color: #f7c531; /* Gold */
+            background-color: #f7c531; 
             color: #333;
             padding: 0.6rem 1.2rem;
-            border-radius: 0.5rem; /* 8px */
+            border-radius: 0.5rem; 
             font-size: 0.9rem;
             font-weight: 600;
             cursor: pointer;
@@ -131,7 +131,7 @@
         .toggle-areas-btn:hover {
             background-color: #e6b82a;
         }
-        .header-sticky { /* Tailwind classes handle sticky, this is for potential custom adjustments */
+        .header-sticky { 
             position: sticky;
             top: 0;
             z-index: 50;
@@ -143,10 +143,13 @@
             font-size: 0.95rem;
         }
         .footer-text {
-            color: #cbd5e1; /* Lighter gray for footer text on dark bg */
+            color: #cbd5e1; 
+        }
+        .footer-link { 
+           /* Color will be inherited from parent footer's text-gray-300 */
         }
         .footer-link:hover {
-            color: #f7c531; /* Gold hover for footer links */
+            color: #f7c531; 
         }
     </style>
 </head>
@@ -155,7 +158,7 @@
     <header class="py-4 header-sticky">
         <div class="container mx-auto px-6 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="mang_sticky_rice_kl_logo.jpg" alt="Thai Mango Sticky Rice KL Logo" class="h-12 w-auto mr-3 rounded-md"> {/* Slightly smaller logo */}
+                <img src="mang_sticky_rice_kl_logo.jpg" alt="Thai Mango Sticky Rice KL Logo" class="h-12 w-auto mr-3 rounded-md">
                 <span class="brand-font text-xl font-bold brand-gold">Thai Mango Sticky Rice KL</span>
             </div>
             <nav class="hidden md:flex space-x-5">
@@ -182,8 +185,7 @@
         <section id="hero" class="hero-section text-white min-h-[70vh] md:min-h-[80vh] flex items-center justify-center">
             <div class="hero-overlay absolute inset-0"></div>
             <div class="relative container mx-auto px-6 text-center py-20">
-                <span class="inline-block bg-brand-gold text-gray-800 text-sm font-semibold px-4 py-1 rounded-full mb-4 uppercase tracking-wider">Freshly Made Daily</span>
-                <h1 class="hero-title text-white mb-6 leading-tight">
+                <h1 class="hero-title text-white mb-6 leading-tight mt-4"> 
                     Authentic Thai <span style="color: #f7c531;">Mango Sticky Rice</span> <br class="hidden md:block">in Kuala Lumpur!
                 </h1>
                 <p class="text-lg sm:text-xl mb-10 max-w-xl mx-auto text-gray-200">
@@ -207,17 +209,17 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
                         <img src="fresh_mangos.jpg" alt="Premium fresh mangoes for Khao Niao Mamuang in Kuala Lumpur" class="w-full h-40 object-cover rounded-md mb-5">
-                        <h3 class="text-xl font-semibold mb-2 text-brand-green">Freshest Ingredients</h3>
+                        <h3 class="text-xl font-semibold mb-2 brand-green-text">Freshest Ingredients</h3>
                         <p class="text-gray-600 text-sm">We use only premium, sweet mangoes and high-quality sticky rice, prepared daily.</p>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
                         <img src="preparation_in_box.jpg" alt="Authentic Thai recipe for Mango Sticky Rice" class="w-full h-40 object-cover rounded-md mb-5">
-                        <h3 class="text-xl font-semibold mb-2 text-brand-green">Authentic Thai Recipe</h3>
+                        <h3 class="text-xl font-semibold mb-2 brand-green-text">Authentic Thai Recipe</h3>
                         <p class="text-gray-600 text-sm">Our traditional recipe ensures that rich, creamy coconut taste you love.</p>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
                         <img src="small_portion_box_set.jpg" alt="Eco-friendly packaging for mango sticky rice delivery" class="w-full h-40 object-cover rounded-md mb-5">
-                        <h3 class="text-xl font-semibold mb-2 text-brand-green">Eco-Friendly & Convenient</h3>
+                        <h3 class="text-xl font-semibold mb-2 brand-green-text">Eco-Friendly & Convenient</h3>
                         <p class="text-gray-600 text-sm">Delivered fresh in eco-friendly packaging. Perfect for any occasion.</p>
                     </div>
                 </div>
@@ -228,16 +230,16 @@
             <div class="container mx-auto px-6 text-center">
                 <h2 class="section-title text-3xl md:text-4xl mb-3 brand-gold">Our Offerings</h2>
                 <div class="w-20 h-1 bg-brand-gold mx-auto mb-12"></div>
-                <div class="grid md:grid-cols-2 gap-10 items-stretch"> {/* items-stretch for equal card height */}
+                <div class="grid md:grid-cols-2 gap-10 items-stretch"> 
                     <div class="card flex flex-col text-center items-center">
                         <img src="mango_box_set_colored.jpg" alt="Mango Sticky Rice Box Set for Delivery in Kuala Lumpur" class="w-full h-56 object-cover rounded-md mb-5">
-                        <h3 class="text-2xl font-semibold mb-3 text-brand-green">Individual & Family Sets</h3>
+                        <h3 class="text-2xl font-semibold mb-3 brand-green-text">Individual & Family Sets</h3>
                         <p class="text-gray-600 mb-4 flex-grow text-sm">Perfectly portioned Mango Sticky Rice, available in various sizes. Ideal for a personal treat or sharing with loved ones. Experience the authentic taste of <strong class="font-semibold">Thai sticky rice with mango</strong>.</p>
                         <a href="https://wa.me/66830138667?text=Hi!%20I'd%20like%20to%20order%20a%20Mango%20Sticky%20Rice%20set." class="btn-primary mt-auto py-2 px-6 text-base">Order Your Set</a>
                     </div>
                     <div class="card flex flex-col text-center items-center">
                         <img src="large_delivery_preparation.jpg" alt="Catering for events with Thai Mango Sticky Rice in Kuala Lumpur" class="w-full h-56 object-cover rounded-md mb-5">
-                        <h3 class="text-2xl font-semibold mb-3 text-brand-green">Event Catering</h3>
+                        <h3 class="text-2xl font-semibold mb-3 brand-green-text">Event Catering</h3>
                         <p class="text-gray-600 mb-4 flex-grow text-sm">Make your event memorable with our <strong class="font-semibold">Thai dessert catering</strong>. We provide delicious <strong class="font-semibold">Khao Niao Mamuang catering</strong> for parties, corporate functions, and gatherings in Kuala Lumpur.</p>
                         <a href="https://wa.me/66830138667?text=Hi!%20I'm%20interested%20in%20catering%20services." class="btn-primary mt-auto py-2 px-6 text-base">Inquire for Catering</a>
                     </div>
@@ -279,7 +281,7 @@
             </div>
         </section>
 
-        <section id="order" class="py-16 md:py-24 bg-brand-green text-white">
+        <section id="order" class="py-16 md:py-24 bg-brand-green text-white"> 
             <div class="container mx-auto px-6 text-center">
                 <h2 class="section-title text-3xl md:text-4xl mb-6 text-white">Taste Paradise Today!</h2>
                 <p class="text-lg mb-8 max-w-xl mx-auto">
@@ -301,15 +303,15 @@
         </section>
     </main>
 
-    <footer class="bg-gray-900 text-gray-400 py-12"> {/* Darker footer bg */}
+    <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="container mx-auto px-6 text-center">
             <img src="mang_sticky_rice_kl_logo.jpg" alt="Thai Mango Sticky Rice KL Logo - Footer" class="h-16 w-auto mx-auto mb-4 rounded-md opacity-80">
             <p class="mb-3 brand-font text-xl brand-gold">Thai Mango Sticky Rice KL</p>
-            <p class="mb-3 text-sm footer-text">Authentic Thai Sweets & Khao Niao Mamuang Catering in Kuala Lumpur.</p>
-            <p class="mb-1 text-sm footer-text">WhatsApp: <a href="https://wa.me/66830138667" class="footer-link underline hover:text-brand-gold">+66 83 013 8667</a></p>
-            <p class="mb-4 text-sm footer-text">Contact (MY): <a href="tel:+60129230811" class="footer-link underline hover:text-brand-gold">+60 12 923 0811</a></p>
-            <p class="text-xs footer-text">&copy; <span id="currentYear"></span> Thai Mango Sticky Rice KL. All Rights Reserved.</p>
-            <p class="text-xs mt-2 footer-text">Your best choice for Mango Sticky Rice in Kuala Lumpur, Petaling Jaya, and the Klang Valley.</p>
+            <p class="mb-3 text-sm">Authentic Thai Sweets & Khao Niao Mamuang Catering in Kuala Lumpur.</p> 
+            <p class="mb-1 text-sm">WhatsApp: <a href="https://wa.me/66830138667" class="footer-link underline hover:text-brand-gold">+66 83 013 8667</a></p>
+            <p class="mb-4 text-sm">Contact (MY): <a href="tel:+60129230811" class="footer-link underline hover:text-brand-gold">+60 12 923 0811</a></p>
+            <p class="text-xs">&copy; <span id="currentYear"></span> Thai Mango Sticky Rice KL. All Rights Reserved.</p> 
+            <p class="text-xs mt-2">Your best choice for Mango Sticky Rice in Kuala Lumpur, Petaling Jaya, and the Klang Valley.</p> 
         </div>
     </footer>
 
