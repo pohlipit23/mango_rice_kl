@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Mango Sticky Rice Kuala Lumpur | Thai Mango Sticky Rice KL | Catering & Delivery</title>
+    <meta name="description" content="Craving authentic Thai Mango Sticky Rice in KL? Thai Mango Sticky Rice KL offers delicious Khao Niao Mamuang for delivery in Kuala Lumpur, PJ, Klang Valley. Order via WhatsApp!">
+    <meta name="keywords" content="Thai Mango Sticky Rice, Mango Sticky Rice Kuala Lumpur, Mango Sticky Rice PJ, Mango Sticky Rice Klang Valley, Khao Niao Mamuang, Thai Mango Rice Near Me, Thai Food Near Me, Thai dessert catering, sticky rice mango delivery, authentic Thai sweets">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Pattaya&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to complement Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF8E1; /* Creamy background */
+        }
+        .hero-section {
+            background-image: url('IMG_20250602_150537 (1).jpg'); /* Appetizing Mango Sticky Rice image */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.55); /* Dark overlay for text contrast */
+        }
+        .brand-font { /* Was thai-font, renamed for clarity if used for brand name only */
+            font-family: 'Pattaya', sans-serif;
+        }
+        .brand-gold { color: #FFB300; } /* Mango gold */
+        .brand-green { color: #4CAF50; } /* Leaf green */
+        .btn-whatsapp {
+            background-color: #25D366; /* WhatsApp green */
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1DAE52;
+        }
+        .btn-google {
+            background-color: #DB4437; /* Google red */
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-google:hover {
+            background-color: #C33D2E;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem; /* 12px */
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+            overflow: hidden; /* Ensures images within cards respect border radius */
+        }
+        .thai-border-element::before {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: #FFB300; /* Mango gold */
+            margin: 0 auto 1rem;
+        }
+        .section-title {
+             font-family: 'Inter', sans-serif; /* Ensuring section titles use Inter */
+             font-weight: 700; /* Bold */
+        }
+        .hero-title {
+            font-family: 'Inter', sans-serif; /* Ensuring hero title uses Inter */
+            font-weight: 700; /* Bold */
+        }
+        .whatsapp-icon {
+            width: 1.5em; /* Adjust size as needed */
+            height: 1.5em;
+            margin-right: 0.5em;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="py-4 bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="Thai Mango (Logo).jpg" alt="Thai Mango Sticky Rice KL Logo" class="h-14 w-auto mr-2 rounded-md">
+                <span class="brand-font text-2xl font-bold brand-gold">Thai Mango Sticky Rice KL</span>
+            </div>
+            <nav class="hidden md:flex space-x-3 lg:space-x-4">
+                <a href="#about" class="text-gray-600 hover:text-brand-gold transition duration-300 px-2 py-1">Specialty</a>
+                <a href="#services" class="text-gray-600 hover:text-brand-gold transition duration-300 px-2 py-1">Services</a>
+                <a href="#locations" class="text-gray-600 hover:text-brand-gold transition duration-300 px-2 py-1">Areas</a>
+                <a href="#order" class="text-gray-600 hover:text-brand-gold transition duration-300 px-2 py-1">Order</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <a href="#about" class="block px-6 py-3 text-gray-600 hover:bg-yellow-100 hover:text-brand-gold transition duration-300">Specialty</a>
+            <a href="#services" class="block px-6 py-3 text-gray-600 hover:bg-yellow-100 hover:text-brand-gold transition duration-300">Services</a>
+            <a href="#locations" class="block px-6 py-3 text-gray-600 hover:bg-yellow-100 hover:text-brand-gold transition duration-300">Delivery Areas</a>
+            <a href="#order" class="block px-6 py-3 text-gray-600 hover:bg-yellow-100 hover:text-brand-gold transition duration-300">Order Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section text-white min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
+            <div class="hero-overlay absolute inset-0"></div>
+            <div class="relative container mx-auto px-6 text-center py-16 md:py-20">
+                <h1 class="hero-title text-4xl sm:text-5xl md:text-5xl mb-4 leading-tight">
+                    Authentic Thai <span class="brand-gold">Mango Sticky Rice</span> in KL!
+                </h1>
+                <p class="text-md sm:text-lg mb-8 max-w-lg mx-auto">
+                    Fresh mangoes, premium sticky rice. Your perfect Thai dessert awaits.
+                </p>
+                <a href="https://wa.me/66830138667" target="_blank" rel="noopener noreferrer"
+                   class="btn-whatsapp font-semibold py-3 px-6 rounded-lg text-lg inline-flex items-center shadow-lg transform hover:scale-105 transition duration-300">
+                    <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.33 3.43 16.79L2.05 22L7.32 20.63C8.75 21.41 10.36 21.82 12.04 21.82C17.5 21.82 21.95 17.37 21.95 11.91C21.95 6.45 17.5 2 12.04 2ZM12.04 20.13C10.56 20.13 9.13 19.75 7.91 19.05L7.53 18.83L4.39 19.67L5.25 16.62L5.02 16.22C4.26 14.94 3.82 13.46 3.82 11.91C3.82 7.39 7.51 3.7 12.04 3.7C16.57 3.7 20.26 7.39 20.26 11.91C20.26 16.43 16.57 20.13 12.04 20.13ZM17.44 14.42C17.21 14.31 16.03 13.75 15.81 13.66C15.59 13.57 15.43 13.52 15.28 13.75C15.12 13.98 14.63 14.54 14.49 14.7C14.34 14.86 14.19 14.88 13.97 14.79C13.74 14.7 12.92 14.42 11.92 13.52C11.12 12.81 10.59 11.93 10.45 11.7C10.3 11.47 10.42 11.34 10.54 11.22C10.65 11.11 10.79 10.92 10.92 10.78C11.04 10.64 11.1 10.53 11.22 10.3C11.34 10.07 11.28 9.89 11.21 9.75C11.13 9.61 10.68 8.43 10.48 7.98C10.28 7.53 10.08 7.59 9.92 7.58C9.77 7.58 9.61 7.58 9.46 7.58C9.3 7.58 9.05 7.64 8.83 7.87C8.61 8.1 8.12 8.55 8.12 9.54C8.12 10.53 9.49 11.89 9.61 12.03C9.74 12.17 10.68 13.63 12.18 14.26C13.68 14.88 14.19 14.72 14.58 14.68C15.07 14.62 16.03 14.08 16.22 13.85C16.42 13.63 16.42 13.46 16.36 13.37C16.31 13.28 16.15 13.22 15.95 13.13C15.76 13.04 17.67 14.51 17.44 14.42Z"/></svg>
+                    Order via WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 md:py-24 bg-yellow-50 section-bg-pattern">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title text-3xl md:text-4xl mb-4 brand-gold thai-border-element">Our Delicious Mango Sticky Rice</h2>
+                <p class="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
+                    At Thai Mango Sticky Rice KL, we bring you the authentic taste of Thailand with our signature <strong class="font-semibold">Khao Niao Mamuang</strong>. We use only the finest, juiciest mangoes and premium sticky rice, drizzled with rich, creamy coconut milk.
+                </p>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                    Quality and authenticity in every bite. Looking for "Thai mango rice near me"? You've found the best!
+                </p>
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <div class="card p-6 flex flex-col">
+                        <img src="IMG_20250602_150546 (2).jpg" alt="Freshly sliced Thai mangoes for sticky rice" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 brand-green">Premium Mangoes</h3>
+                        <p class="text-gray-600">Handpicked, sweet, and succulent mangoes.</p>
+                    </div>
+                    <div class="card p-6 flex flex-col">
+                        <img src="IMG_20250602_150539 (1).jpg" alt="Perfectly cooked glutinous sticky rice portions" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 brand-green">Authentic Sticky Rice</h3>
+                        <p class="text-gray-600">Glutinous rice cooked to the perfect chewy texture.</p>
+                    </div>
+                    <div class="card p-6 flex flex-col">
+                        <img src="IMG_20250602_150532.jpg" alt="Rich and creamy coconut milk with mango sticky rice" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 brand-green">Rich Coconut Milk</h3>
+                        <p class="text-gray-600">Our special recipe coconut milk sauce.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title text-3xl md:text-4xl mb-12 brand-gold thai-border-element">Catering & Delivery</h2>
+                <div class="grid md:grid-cols-2 gap-10 items-start">
+                    <div class="card p-8 text-left flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-4 brand-green">Event Catering</h3>
+                        <p class="text-gray-700 mb-4 flex-grow">
+                            Delight guests at your party or corporate event with our authentic <strong class="font-semibold">Thai dessert catering</strong>. Fresh <strong class="font-semibold">Khao Niao Mamuang catering</strong> packages available.
+                        </p>
+                        <img src="IMG_20250602_150433.jpg" alt="Thai Mango Sticky Rice catering setup for events in KL" class="w-full h-56 object-cover rounded-md mt-4">
+                    </div>
+                    <div class="card p-8 text-left flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-4 brand-green">Home Delivery</h3>
+                        <p class="text-gray-700 mb-4 flex-grow">
+                            Get <strong class="font-semibold">mango sticky rice delivery</strong> to your doorstep in Kuala Lumpur, PJ, and Klang Valley. Quick, reliable, and always fresh authentic Thai sweets.
+                        </p>
+                         <img src="IMG_20250602_150535.jpg" alt="Mango sticky rice delivery service in Kuala Lumpur" class="w-full h-56 object-cover rounded-md mt-4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="locations" class="py-16 md:py-24 bg-yellow-50 section-bg-pattern">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title text-3xl md:text-4xl mb-4 brand-gold thai-border-element">Serving KL & Beyond</h2>
+                <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                    We deliver <strong class="font-semibold">mango sticky rice</strong> to Kuala Lumpur, PJ, Klang Valley, and more. Searching "Thai Mango Sticky Rice Kuala Lumpur"? We've got you!
+                </p>
+                <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="p-4 bg-white rounded-lg shadow-md"><span class="text-lg font-semibold text-gray-700">Kuala Lumpur</span></div>
+                    <div class="p-4 bg-white rounded-lg shadow-md"><span class="text-lg font-semibold text-gray-700">Petaling Jaya</span></div>
+                    <div class="p-4 bg-white rounded-lg shadow-md"><span class="text-lg font-semibold text-gray-700">Klang Valley</span></div>
+                    <div class="p-4 bg-white rounded-lg shadow-md"><span class="text-lg font-semibold text-gray-700">& More Areas</span></div>
+                </div>
+                <p class="mt-6 text-gray-600">Unsure about your area? WhatsApp us!</p>
+            </div>
+        </section>
+
+        <section id="order" class="py-16 md:py-24 bg-brand-green text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title text-3xl md:text-4xl mb-6">Ready for a Taste of Thailand?</h2>
+                <p class="text-lg mb-8 max-w-xl mx-auto">
+                    Order your delicious Thai Mango Sticky Rice today! Quick, easy, and delivered fresh.
+                </p>
+                <a href="https://wa.me/66830138667?text=Hi%20Thai%20Mango%20Sticky%20Rice%20KL,%20I'd%20like%20to%20order%20mango%20sticky%20rice!" target="_blank" rel="noopener noreferrer"
+                   class="bg-white text-brand-green font-semibold py-3 px-8 rounded-lg text-xl inline-flex items-center shadow-lg transform hover:scale-105 transition duration-300 mb-6">
+                   <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.33 3.43 16.79L2.05 22L7.32 20.63C8.75 21.41 10.36 21.82 12.04 21.82C17.5 21.82 21.95 17.37 21.95 11.91C21.95 6.45 17.5 2 12.04 2ZM12.04 20.13C10.56 20.13 9.13 19.75 7.91 19.05L7.53 18.83L4.39 19.67L5.25 16.62L5.02 16.22C4.26 14.94 3.82 13.46 3.82 11.91C3.82 7.39 7.51 3.7 12.04 3.7C16.57 3.7 20.26 7.39 20.26 11.91C20.26 16.43 16.57 20.13 12.04 20.13ZM17.44 14.42C17.21 14.31 16.03 13.75 15.81 13.66C15.59 13.57 15.43 13.52 15.28 13.75C15.12 13.98 14.63 14.54 14.49 14.7C14.34 14.86 14.19 14.88 13.97 14.79C13.74 14.7 12.92 14.42 11.92 13.52C11.12 12.81 10.59 11.93 10.45 11.7C10.3 11.47 10.42 11.34 10.54 11.22C10.65 11.11 10.79 10.92 10.92 10.78C11.04 10.64 11.1 10.53 11.22 10.3C11.34 10.07 11.28 9.89 11.21 9.75C11.13 9.61 10.68 8.43 10.48 7.98C10.28 7.53 10.08 7.59 9.92 7.58C9.77 7.58 9.61 7.58 9.46 7.58C9.3 7.58 9.05 7.64 8.83 7.87C8.61 8.1 8.12 8.55 8.12 9.54C8.12 10.53 9.49 11.89 9.61 12.03C9.74 12.17 10.68 13.63 12.18 14.26C13.68 14.88 14.19 14.72 14.58 14.68C15.07 14.62 16.03 14.08 16.22 13.85C16.42 13.63 16.42 13.46 16.36 13.37C16.31 13.28 16.15 13.22 15.95 13.13C15.76 13.04 17.67 14.51 17.44 14.42Z"/></svg>
+                    Order via WhatsApp
+                </a>
+                <p class="text-lg my-4">Or</p>
+                <a href="https://g.co/kgs/dm5itzG" target="_blank" rel="noopener noreferrer"
+                   class="btn-google font-semibold py-3 px-8 rounded-lg text-lg inline-flex items-center shadow-lg transform hover:scale-105 transition duration-300">
+                    <svg class="whatsapp-icon mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/><path d="M1 1h22v22H1z" fill="none"/></svg>
+                    See Our Reviews
+                </a>
+                <p class="mt-4 text-sm">Find us on Google for more info and customer experiences.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-10 text-center">
+        <div class="container mx-auto px-6">
+            <img src="Thai Mango (Logo).jpg" alt="Thai Mango Sticky Rice KL Logo - Footer" class="h-16 w-auto mx-auto mb-3 rounded-md opacity-75">
+            <p class="mb-2 brand-font text-xl brand-gold">Thai Mango Sticky Rice KL</p>
+            <p class="mb-2 text-sm">Authentic Thai Sweets & Khao Niao Mamuang Catering</p>
+            <p class="mb-1 text-sm">WhatsApp: <a href="https://wa.me/66830138667" class="hover:text-brand-gold underline">+66 83 013 8667</a></p>
+            <p class="mb-3 text-sm">Contact (MY): <a href="tel:+60129230811" class="hover:text-brand-gold underline">+60 12 923 0811</a></p>
+            <p class="text-xs">&copy; <span id="currentYear"></span> Thai Mango Sticky Rice KL. All Rights Reserved.</p>
+            <p class="text-xs mt-1">Your go-to for Mango Sticky Rice in Kuala Lumpur, PJ, and Klang Valley.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Calculate offset for sticky header
+                    const headerOffset = document.querySelector('header').offsetHeight || 70; // Fallback offset
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+
+                    // Close mobile menu if open after click
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Set current year in footer
+        const yearSpan = document.getElementById('currentYear');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+
+        // Image error handling for dynamic images
+        function setImageFallback(imgElement, placeholderUrl) {
+            imgElement.onerror = function() {
+                imgElement.onerror = null; // prevent infinite loop
+                imgElement.src = placeholderUrl;
+                console.warn("Image failed to load, using placeholder:", imgElement.alt);
+            };
+             // If src is already empty or invalid, trigger onerror
+            if (!imgElement.getAttribute('src')) {
+                 imgElement.src = placeholderUrl;
+            }
+        }
+
+        // Fallback for hero image
+        const heroSection = document.getElementById('hero');
+        if (heroSection) {
+            const heroBgImageUrl = 'IMG_20250602_150537 (1).jpg';
+            const tempImg = new Image();
+            tempImg.src = heroBgImageUrl;
+            tempImg.onerror = function() {
+                heroSection.style.backgroundImage = "url('https://placehold.co/1200x800/FFB300/FFFFFF?text=Delicious+Mango+Sticky+Rice')";
+                heroSection.style.backgroundColor = '#FFB300'; // Fallback background color
+            };
+        }
+        
+        // Fallback for logo images
+        document.querySelectorAll('img[src="Thai Mango (Logo).jpg"]').forEach(logo => {
+            setImageFallback(logo, 'https://placehold.co/150x50/333333/FFFFFF?text=Logo');
+        });
+
+        // Fallback for content images
+        const contentImages = [
+            { selector: 'img[alt*="Freshly sliced Thai mangoes"]', placeholder: 'https://placehold.co/300x200/FFB300/FFFFFF?text=Fresh+Mangoes', newSrc: 'IMG_20250602_150546 (2).jpg' },
+            { selector: 'img[alt*="glutinous sticky rice portions"]', placeholder: 'https://placehold.co/300x200/FFF8E1/333333?text=Sticky+Rice', newSrc: 'IMG_20250602_150539 (1).jpg' },
+            { selector: 'img[alt*="coconut milk with mango sticky rice"]', placeholder: 'https://placehold.co/300x200/A5D6A7/FFFFFF?text=Coconut+Milk', newSrc: 'IMG_20250602_150532.jpg' },
+            { selector: 'img[alt*="catering setup for events"]', placeholder: 'https://placehold.co/400x250/FFB300/FFFFFF?text=Catering', newSrc: 'IMG_20250602_150433.jpg' },
+            { selector: 'img[alt*="delivery service in Kuala Lumpur"]', placeholder: 'https://placehold.co/400x250/4CAF50/FFFFFF?text=Delivery', newSrc: 'IMG_20250602_150535.jpg' }
+        ];
+
+        contentImages.forEach(item => {
+            const imgElement = document.querySelector(item.selector);
+            if (imgElement) {
+                // Set the new source first
+                imgElement.src = item.newSrc;
+                // Then apply the fallback logic
+                setImageFallback(imgElement, item.placeholder);
+            }
+        });
+
+    </script>
+
+</body>
+</html>
