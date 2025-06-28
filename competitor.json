@@ -1,0 +1,54 @@
+
+{
+  "competitors": [
+    {
+      "name": "Absolute Thai",
+      "description": "Modern take on Thai cuisine, uses fresh, locally grown mangoes.",
+      "locations": ["The Gardens Mall"]
+    },
+    {
+      "name": "Rama V",
+      "description": "Refined dining experience with an emphasis on flavor and texture."
+    },
+    {
+      "name": "My Elephant",
+      "description": "Popular choice for Thai food lovers in KL."
+    },
+    {
+      "name": "Baan 26",
+      "description": "A well-regarded Thai restaurant in the city."
+    },
+    {
+      "name": "Jatujak Bangkok Street Food",
+      "description": "Praised for its authentic Thai street food, and their mango sticky rice is a must-try. It's served on a pandan leaf with a large, juicy mango."
+    },
+    {
+      "name": "Thai Moment, Desa Setapak",
+      "description": "Offers a simple yet delicious mango sticky rice made with fresh ingredients."
+    },
+    {
+      "name": "Malai Thai Cuisine",
+      "description": "A great option for those craving authentic Thai flavors."
+    },
+    {
+      "name": "La Moon Thai Restaurant",
+      "description": "Another excellent choice for traditional Thai food."
+    },
+    {
+      "name": "Thai Luck Thai Cuisine",
+      "description": "This restaurant serves a simple but satisfying mango sticky rice that tastes like a 'tropical vacation.'"
+    },
+    {
+      "name": "Yellow Thai Food",
+      "description": "This food truck offers a quick and convenient mango sticky rice fix. Their version is infused with pandan flavor."
+    },
+    {
+      "name": "Rosdet Tomyam",
+      "description": "A hidden gem on the outskirts of the city center, this spot serves affordable and delicious Thai-Malay fusion dishes, including a mango sticky rice with both plain and pandan-infused sticky rice."
+    },
+    {
+      "name": "Jalan Alor Night Market",
+      "description": "For a classic street food experience, you can find vendors selling mango sticky rice at this bustling night market."
+    }
+  ]
+}
