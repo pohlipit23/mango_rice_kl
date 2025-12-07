@@ -13,7 +13,7 @@
     <!-- Open Graph Tags -->
     <meta property="og:title" content="10 Best Thai Restaurants in Kuala Lumpur (2025)" />
     <meta property="og:description" content="Discover the 10 best Thai restaurants in Kuala Lumpur for 2025. Our expert guide covers the top spots for authentic Thai food in KL." />
-    <meta property="og:image" content="mang_sticky_rice_plate.jpg" />
+    <meta property="og:image" content="https://stickyricemango.waddat.com/mang_sticky_rice_plate.jpg" />
     <meta property="og:url" content="https://stickyricemango.waddat.com/thai-restaurants.html" />
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="Mango Sticky Rice Kuala Lumpur" />
@@ -22,10 +22,13 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="10 Best Thai Restaurants in Kuala Lumpur (2025)" />
     <meta name="twitter:description" content="Discover the 10 best Thai restaurants in Kuala Lumpur for 2025. Our expert guide covers the top spots for authentic Thai food in KL." />
-    <meta name="twitter:image" content="mang_sticky_rice_plate.jpg" />
+    <meta name="twitter:image" content="https://stickyricemango.waddat.com/mang_sticky_rice_plate.jpg" />
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#FFF8E1">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="mang_sticky_rice_kl_logo.jpg" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -135,7 +138,7 @@
     <header class="py-4 header-sticky">
         <div class="container mx-auto px-6 flex justify-between items-center">
             <a href="/" class="flex items-center">
-                <img src="mang_sticky_rice_kl_logo.jpg" alt="Logo of Thai Mango Sticky Rice KL" class="h-14 w-auto mr-4 rounded-full shadow-md">
+                <img src="mang_sticky_rice_kl_logo.jpg" alt="Logo of Thai Mango Sticky Rice KL" class="h-14 w-auto mr-4 rounded-full shadow-md" loading="lazy">
                 <span class="font-bold text-2xl brand-red">Mango Sticky Rice Kuala Lumpur</span>
             </a>
             <nav class="hidden md:flex space-x-8">
@@ -177,9 +180,9 @@
 
     <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="container mx-auto px-6 text-center">
-            <p class="mb-4 text-lg brand-red font-bold">MangoRice</p>
+            <p class="mb-4 text-lg brand-red font-bold">Mango Sticky Rice Kuala Lumpur</p>
             <p class="mb-4 text-sm">Authentic Thai Mango Sticky Rice in Kuala Lumpur.</p>
-            <p class="text-xs">&copy; <span id="currentYear"></span> MangoRice KL. All Rights Reserved.</p>
+            <p class="text-xs">&copy; <span id="currentYear"></span> Mango Sticky Rice Kuala Lumpur. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -209,24 +212,36 @@
 
         // Fetch and render restaurants
         async function loadRestaurants() {
+            const container = document.getElementById('restaurants-container');
+            
+            // Show loading state
+            container.innerHTML = '<p class="text-center text-gray-600 py-12">Loading restaurants...</p>';
+            
             try {
                 const response = await fetch('thai_restaurants_kl.json');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 const restaurants = await response.json();
-                const container = document.getElementById('restaurants-container');
+                
+                if (!Array.isArray(restaurants) || restaurants.length === 0) {
+                    throw new Error('No restaurant data available');
+                }
+                
                 const itemListSchema = document.querySelector('script[type="application/ld+json"]');
                 const itemList = JSON.parse(itemListSchema.textContent);
+                
+                // Clear loading state
+                container.innerHTML = '';
 
                 restaurants.forEach((restaurant, index) => {
                     const card = document.createElement('div');
                     card.className = 'card flex flex-col md:flex-row items-center';
                     card.setAttribute('data-aos', 'fade-up');
 
-                    const imagesHTML = restaurant.image_links.map((link, index) => {
-                        if (index === 0) {
-                            return `<img src="${link}" alt="Image of ${restaurant.name}" class="w-full h-96 object-cover">`;
+                    const imagesHTML = restaurant.image_links.map((link, imgIndex) => {
+                        if (imgIndex === 0) {
+                            return `<img src="${link}" alt="Image of ${restaurant.name}" class="w-full h-96 object-cover" loading="lazy">`;
                         }
                         return '';
                     }).join('');
@@ -268,9 +283,14 @@
                 itemListSchema.textContent = JSON.stringify(itemList, null, 2);
 
             } catch (error) {
-                console.error('Failed to load restaurants:', error);
-                const container = document.getElementById('restaurants-container');
-                container.innerHTML = '<p class="text-center text-red-500">Failed to load restaurant data. Please try again later.</p>';
+                // Remove console.error for production - show user-friendly message instead
+                container.innerHTML = `
+                    <div class="text-center py-12">
+                        <p class="text-red-500 mb-4 text-lg font-semibold">Unable to load restaurant information</p>
+                        <p class="text-gray-600 mb-6">We're having trouble loading the restaurant list. Please refresh the page or try again later.</p>
+                        <button onclick="location.reload()" class="btn-primary py-3 px-8 text-base">Refresh Page</button>
+                    </div>
+                `;
             }
         }
 
